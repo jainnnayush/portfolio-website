@@ -4,10 +4,10 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import SearchPreview from "@/public/SearchPreview.png";
 import UserDashboard from "@/public/UserDashboard.png";
 import portfolio from "@/public/portfolio.png"
 import coolab from "@/public/Coolab.png"
+import deployx from "@/public/deployx.png"
 
 export const links = [
   {
@@ -45,15 +45,24 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
+  {
+    title: "Full Stack Intern | Alphaherd - A SaaS platform for Clinics",
+    location: "Remote",
+    description:
+      "As a Full Stack Intern, I developed RESTful APIs using Next.js, Node.js, and SQL with a focus on query optimization, error handling, and secure data operations. I optimized website performance using Sentry.io, server-side caching, React hooks, and lazy loading. Additionally, I integrated automated Email and WhatsApp messaging for seamless client communication.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2025",
+  }
 ] as const;
 
 export const projectsData = [
   {
-    title: "Ed Tech Platform",
+    title: "DeployX",
     description:
-      "StudyNotion simplifies education by providing access to diverse materials, enabling collaboration, and fostering interaction with educators to enhance learning.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-    imageUrl: corpcommentImg,
+      "DeployX is a scalable and secure deployment platform that automates the build and deployment process using Docker containers, AWS ECS, and ECR.",
+    tags: ["Node.js", "Docker", "AWS", "Redis"],
+    imageUrl: deployx,
+    githubUrl:"https://github.com/jainnnayush/vercel"
   },
   {
     title: "DealScout",
@@ -61,13 +70,7 @@ export const projectsData = [
       "DealScout is an e-commerce scraping site that notifies users of price drops and alerts competitors about stock status, managed via cron jobs.",
     tags: ["Next.js", "MongoDB", "Tailwind CSS", "Headless UI"],
     imageUrl: rmtdevImg,
-  },
-  {
-    title: "ShopAI",
-    description:
-      "ShopAI is a conversational outfit recommender for personalized fashion suggestions based on trends, budget, and cart history along with Twilio integration for WhatsApp support.",
-    tags: ["React.js", "FastAPI","Vertex API"],
-    imageUrl: SearchPreview,
+    githubUrl:"https://github.com/jainnnayush/PriceTracker/tree/main/Pricewise-main"
   },
   {
     title: "OnlineJudge",
@@ -75,6 +78,7 @@ export const projectsData = [
       "An online judge platform for coding challenges in multiple languages, allowing user submissions and verdicts based on hidden test case evaluations.",
     tags: ["React.js", "MongoDB","Node.js","Tailwind CSS","AWS EC2"],
     imageUrl: UserDashboard,
+    githubUrl:"https://github.com/jainnnayush/OnlineJudge"
   },
   {
     title: "Personal Portfolio",
@@ -82,6 +86,7 @@ export const projectsData = [
       "A personal portfolio showcasing projects, skills, and achievements, built with Next.js for a modern and responsive design.",
     tags: ["Next.js","Tailwind CSS","TypeScript"],
     imageUrl: portfolio,
+    githubUrl:"https://github.com/jainnnayush/portfolio-website"
   },
   {
     title: "Campus Collaborate",
@@ -89,6 +94,7 @@ export const projectsData = [
       "A collaborative web app for showcasing profiles, exploring projects, seeking help, and contributing to peers.",
     tags: ["React.js", "Firebase","Node.js","Express","Redux"],
     imageUrl: coolab,
+    githubUrl:"https://github.com/jainnnayush/Coolab"
   },
 ] as const;
 
@@ -105,14 +111,18 @@ export const skillsData = [
   "Redux",
   "Express",
   "PostgreSQL",
-  "AWS*",
+  "AWS",
+  "Docker",
+  "Redis",
+  "Kubernetes",
   "Javascript",
-  "TypeScript*",
+  "TypeScript",
   "DBMS",
   "OOPS",
-  "System Design",
+  "High level System Design",
+  "Low level System Design",
   "DSA",
   "Machine Learning",
   "Blockchain Fundamentals",
-  "MySQL"
+  "MySQL",
 ] as const;
